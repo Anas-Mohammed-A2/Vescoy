@@ -1,0 +1,59 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+:root {
+    --backgrondDarker: rgb(23,23,23);
+    --backgrondDark: rgb(31,31,31);
+    --color: rgb(202,31,38);
+    --font:'El Messiri', sans-serif;
+    --textColor:#ffffff;
+  }
+.loader{
+    display: block;
+    position: relative;
+    height: 12px;
+    width: 300px;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    overflow: hidden;
+  bottom: 60px;
+
+  }
+  .loader::after {
+    content: '';
+    width: 40%;
+    height: 100%;
+    background: var(--color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      left: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      left: 100%;
+      transform: translateX(0%);
+    }
+  }
+  
+.preloaderr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--backgrondDarker);
+    position: relative;
+  }
+  .imglogo {
+    width: 350px;
+  }

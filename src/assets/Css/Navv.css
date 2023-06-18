@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@500&display=swap");
+:root {
+  --backgrondDarker: rgb(23, 23, 23);
+  --backgrondDark: rgb(31, 31, 31);
+  --color: rgb(202, 31, 38);
+  --font: "El Messiri", sans-serif;
+  --textColor: #ffffff;
+}
+.Bodyy{
+  background-color: var(--backgrondDarker);
+}
+.NavBarr {
+  background-color: rgb(23, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  height: 100px;
+  padding: 0 25px;
+  direction: rtl;
+}
+.LogoNav {
+  width: 150px;
+}
+.Linkes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: block;
+}
+.Linkes a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: var(--font);
+  color: var(--textColor);
+  transition: 0.5s all;
+}
+.linko {
+  margin-left: 15px;
+  padding-bottom: 5px;
+  transition: 0.5s all;
+}
+.Linkes a:hover {
+  color: var(--color);
+}
+/* Menu bar */
+.menuBarrr {
+  display: none;
+}
+/* menuBarrr btn btn-primary */
+.offcanvas-body {
+  background-color: var(--backgrondDark);
+  color: var(--textColor);
+  position: relative;
+}
+.offcanvas-header {
+  background-color: var(--backgrondDarker);
+  color: var(--textColor);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoMenu {
+  width: 120px;
+  margin-right: 100px;
+}
+
+.LinkesMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: block;
+}
+.LinkesMenu a {
+  text-decoration: none;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: var(--font);
+  color: var(--textColor);
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .Linkes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: none;
+  }
+  .menuBarrr {
+    display: block;
+  }
+}
